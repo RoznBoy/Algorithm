@@ -23,3 +23,18 @@ for _ in range(N):
             print(heap[-1])
             heap.pop()
 '''
+
+### 두번째 풀이 ###
+### 정답 검색 해 봄 -> 전부 heap 패키지 사용
+import heapq
+heap=[]
+for i in range(N):
+    x=int(sys.stdin.readline())
+
+    if x!=0:
+        heapq.heappush(heap,x)
+    else:
+        if len(heap)!=0:
+            print(heapq.heappop(heap))
+        else:
+            print(0)
