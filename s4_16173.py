@@ -1,5 +1,7 @@
 import sys
 
+# DFS
+
 N = int(sys.stdin.readline())
 game_map = []
 visited = []
